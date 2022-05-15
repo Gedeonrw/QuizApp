@@ -15,7 +15,6 @@ import androidx.navigation.findNavController
 import com.example.simplequiz.databinding.FragmentQuizGameBinding
 import kotlinx.android.synthetic.main.fragment_quiz_game.*
 
-
 /**
  * A simple [Fragment] subclass.
  */
@@ -50,15 +49,12 @@ class QuizFragment : Fragment() {
         Log.d("ANSWERGROUP", answers[0]+ " "+answers[1]+ " "+answers[2]+ " "+answers[3]+ " ")
         Log.d("REALANSWER", currentQuestion.answerGroup[0])
 
-
-
     }
 
     private fun randomQuestion(){
         questions.shuffle()
         setQuestion()
     }
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -106,8 +102,8 @@ class QuizFragment : Fragment() {
     }
 
     private fun getScore(){
-        if(score>=2){
-        val action = QuizFragmentDirections.actionQuizFragment3ToQuizWonFragment(score,wrongAnswerList.toTypedArray())
+        if(score>=3){
+        val action = QuizFragmentDirections.actionQuizFragment3ToQuizWonFragment(score ,wrongAnswerList.toTypedArray())
             view!!.findNavController().navigate(action)
 
         }

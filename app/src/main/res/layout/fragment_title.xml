@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
             style="@style/ButtonStyle"
             android:layout_gravity="center_horizontal|bottom"
-            android:text="Click here to StartStart "
+            android:text="Click here to Start "
             >
 
         </Button>

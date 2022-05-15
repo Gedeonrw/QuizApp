@@ -64,7 +64,7 @@
                 android:layout_height="wrap_content"
                 style="@style/ButtonStyle"
                 android:layout_gravity="center_horizontal|bottom"
-                android:text=" Play Next "
+                android:text=" Congratulations "
                 >
 
             </Button>
