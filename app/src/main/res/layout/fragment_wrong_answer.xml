@@ -53,7 +53,7 @@
                 android:layout_gravity="center_horizontal"
                 android:textSize="20sp"
                 android:id="@+id/yourwronganswer"
-                android:text="Your wrong answers - "
+                android:text="You failed the following questions: "
                 android:visibility="gone"
                 >
             </TextView>
